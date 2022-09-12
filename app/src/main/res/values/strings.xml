@@ -7,7 +7,13 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_registrar">Registrar Lectura</string>
+    <string name="menu_buscar">Buscar Libro</string>
+    <string name="menu_detalle">Detalle Libro</string>
+    <string name="menu_listado">Listado de Libro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtTitulo">Ingresa Titulo</string>
+    <string name="txtAutor">Ingresa Autor</string>
+    <string name="txtRegistrar">Registrar</string>
 </resources>
