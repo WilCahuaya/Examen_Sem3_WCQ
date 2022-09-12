@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/nav_registrar"
-        android:name="com.example.examen_sem_wcq.ui.home.HomeFragment"
+        android:name="com.example.examen_sem_wcq.ui.registrar.RegistrarFragment"
         android:label="@string/menu_registrar"
         tools:layout="@layout/fragment_registrar" />
 
     <fragment
         android:id="@+id/nav_buscar"
-        android:name="com.example.examen_sem_wcq.ui.home.HomeFragment"
+        android:name="com.example.examen_sem_wcq.ui.buscar.BuscarFragment"
         android:label="@string/menu_buscar"
         tools:layout="@layout/fragment_buscar" />
 
     <fragment
         android:id="@+id/nav_detalle"
-        android:name="com.example.examen_sem_wcq.ui.gallery.GalleryFragment"
+        android:name="com.example.examen_sem_wcq.ui.detalle.DetalleFragment"
         android:label="@string/menu_detalle"
         tools:layout="@layout/fragment_detalle" />
 
     <fragment
         android:id="@+id/nav_listado"
-        android:name="com.example.examen_sem_wcq.ui.slideshow.SlideshowFragment"
+        android:name="com.example.examen_sem_wcq.ui.listado.ListadoFragment"
         android:label="@string/menu_listado"
         tools:layout="@layout/fragment_listado" />
 </navigation>

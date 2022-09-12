@@ -21,7 +21,13 @@
         android:hint="Profesion"/>
 
     <Button
+        android:id="@+id/btnRegistrarPreferencias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrar"/>
+    <Button
+        android:id="@+id/btnRecuperarPreferencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rcuperar"/>
 </LinearLayout>

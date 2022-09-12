@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class PreferenciasManual extends AppCompatActivity {
     EditText edtUsuario,edtPropfesor;
-    Button btnRegistrar;
+    Button btnRegistrar, btnRecuperar;
     String sUsuario,sProfesor;
 
     public static final String ARCHIVO_PREF="Preferencias_WCQ";
@@ -23,7 +23,8 @@ public class PreferenciasManual extends AppCompatActivity {
 
         edtUsuario=findViewById(R.id.edtUsuario);
         edtPropfesor=findViewById(R.id.edtProfesion);
-        btnRegistrar=findViewById(R.id.btnRegistrar);
+        btnRegistrar=findViewById(R.id.btnRegistrarPreferencias);
+        btnRecuperar=findViewById(R.id.btnRecuperarPreferencias);
 
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,9 +34,21 @@ public class PreferenciasManual extends AppCompatActivity {
                 SharedPreferences preferences=getSharedPreferences(ARCHIVO_PREF,0);
                 SharedPreferences.Editor editor= preferences.edit();
                 editor.putString("usuario",sUsuario);
-                editor.putString("PROFESION",sProfesor);
+                editor.putString("profesion",sProfesor);
                 editor.commit();
                 Toast.makeText(PreferenciasManual.this,"Registros guardados",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        btnRecuperar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences preferences=getSharedPreferences(ARCHIVO_PREF,0);
+                sUsuario=preferences.getString("usuario","No registrado");
+                sProfesor=preferences.getString("usuario","No registrado");
+                Toast.makeText(PreferenciasManual.this,
+                        "Los valores registrados son \n"+
+                        sUsuario+"\n"+sProfesor,Toast.LENGTH_LONG).show();
             }
         });
     }
