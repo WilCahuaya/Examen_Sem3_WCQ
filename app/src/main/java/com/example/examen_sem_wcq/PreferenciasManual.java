@@ -44,11 +44,15 @@ public class PreferenciasManual extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SharedPreferences preferences=getSharedPreferences(ARCHIVO_PREF,0);
-                sUsuario=preferences.getString("usuario","No registrado");
-                sProfesor=preferences.getString("usuario","No registrado");
-                Toast.makeText(PreferenciasManual.this,
-                        "Los valores registrados son \n"+
-                        sUsuario+"\n"+sProfesor,Toast.LENGTH_LONG).show();
+                if(preferences.contains("usuario")) {
+                    sUsuario = preferences.getString("usuario", "No registrado");
+                    sProfesor = preferences.getString("profesion", "No registrado");
+                    Toast.makeText(PreferenciasManual.this,
+                            "Los valores registrados son \n" +
+                                    sUsuario + "\n" + sProfesor, Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(PreferenciasManual.this,"Error de clave",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

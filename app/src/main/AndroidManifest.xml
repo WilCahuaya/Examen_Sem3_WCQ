@@ -9,18 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Examen_Sem_WCQ">
-        <activity android:name=".PreferenciasManual"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Examen_Sem_WCQ.NoActionBar">
+        <activity android:name=".Login"></activity>
+        <activity android:name=".Splash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Preferncias_Class"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".PreferenciasManual"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Examen_Sem_WCQ.NoActionBar" />
     </application>
 
 </manifest>

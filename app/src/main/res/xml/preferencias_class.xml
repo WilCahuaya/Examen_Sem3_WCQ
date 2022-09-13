@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory
+    android:title="Configuración">
+<CheckBoxPreference
+    android:key="mantener_sesion"
+    android:title="Mantener sesion usuario"
+    android:summary="Mantener las credenciales del usuario al cerrar el app"
+    android:defaultValue="true">
+</CheckBoxPreference>
+    <EditTextPreference
+        android:key="nombre_usuario"
+        android:title="Mantener sesion usuario"
+        android:summary="Almacenar el nombre del usuario al cerrar el app">
+
+    </EditTextPreference>
+</PreferenceCategory>
+</PreferenceScreen>
