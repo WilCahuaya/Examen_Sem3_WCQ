@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Preferncias_Class"
+            android:name=".Preferencias_class"
             android:exported="true">
 
         </activity>
@@ -30,7 +30,9 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Examen_Sem_WCQ.NoActionBar" />
+            android:theme="@style/Theme.Examen_Sem_WCQ.NoActionBar" >
+
+        </activity>
     </application>
 
 </manifest>
