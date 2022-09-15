@@ -1,4 +1,4 @@
-package com.example.examen_sem_wcq.ui.detalle;
+package com.example.examen_sem_wcq.ui.realizartransferencias;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.examen_sem_wcq.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link DetalleFragment#newInstance} factory method to
+ * Use the {@link RealisarTransfFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class DetalleFragment extends Fragment {
+public class RealisarTransfFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class DetalleFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public DetalleFragment() {
+    public RealisarTransfFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class DetalleFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DetalleFragment.
+     * @return A new instance of fragment RealisarTransfFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static DetalleFragment newInstance(String param1, String param2) {
-        DetalleFragment fragment = new DetalleFragment();
+    public static RealisarTransfFragment newInstance(String param1, String param2) {
+        RealisarTransfFragment fragment = new RealisarTransfFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class DetalleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detalle, container, false);
+        return inflater.inflate(R.layout.fragment_realisar_transf, container, false);
     }
 }

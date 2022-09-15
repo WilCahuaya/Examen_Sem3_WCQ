@@ -1,19 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Splash"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/banner_splash_screen"
+        android:scaleType="center"
+        android:id="@+id/splashLogo"
+        ></ImageView>
+    <View
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/degradado_splash1"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        >
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E Corp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:id="@+id/txtSplashTexto"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Banca Móvil"
+            android:textColor="@color/white"
+            android:textSize="20sp"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="9"
+        >
+        <Button
+            android:id="@+id/btnCreaCuenta"
+            android:background="@color/transparente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya tienes cuenta?"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            />
+        <Button
+            android:background="@color/transparente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión?"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:id="@+id/btnIniciarSesion"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnTerminos"
+        android:background="@color/transparente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Términos de uso y privacidad"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        />
+    </LinearLayout>
+
+</FrameLayout>

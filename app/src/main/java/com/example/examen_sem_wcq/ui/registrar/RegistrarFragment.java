@@ -18,7 +18,7 @@ import com.example.examen_sem_wcq.R;
 
 public class RegistrarFragment extends Fragment {
 
-    EditText edtTitulo,edtAutor;
+    EditText edtProfesion,edtDirteccion;
     Button btnRegistrar;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,14 +30,25 @@ public class RegistrarFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View vista =inflater.inflate(R.layout.fragment_registrar, container, false);
-        edtTitulo=vista.findViewById(R.id.edtTitulo);
-        edtAutor=vista.findViewById(R.id.edtAutor);
-        btnRegistrar=vista.findViewById(R.id.btnRegistrar);
+        edtProfesion=vista.findViewById(R.id.edtProfesion);
+        edtDirteccion=vista.findViewById(R.id.edtDireccion);
+        btnRegistrar=vista.findViewById(R.id.btnRegitraTransf);
 
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(),edtTitulo.getText().toString()+"\n "+edtAutor.getText().toString(),Toast.LENGTH_SHORT).show();
+                String sProfesion=edtProfesion.getText().toString();
+                String sDireccion=edtDirteccion.getText().toString();
+
+                if("".equals(sProfesion)){
+                    edtProfesion.setError("Ingresa Profesión");
+                    edtProfesion.requestFocus();
+                }
+
+                if("".equals(sDireccion)){
+                    edtDirteccion.setError("Ingresa Die=rección");
+                    edtDirteccion.requestFocus();
+                }
 
             }
         });

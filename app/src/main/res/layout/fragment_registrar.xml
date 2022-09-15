@@ -1,28 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.registrar.RegistrarFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <EditText
-        android:id="@+id/edtTitulo"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/txtRegistrar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/txtTitulo"
+        android:text="Registrar"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <EditText
+        android:id="@+id/edtProfesion"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:hint="Profesión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistrar"
         />
     <EditText
-        android:id="@+id/edtAutor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/txtAutor"
-        android:layout_gravity="center"/>
-    <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/txtRegistrar"
-        android:layout_gravity="bottom"/>
+        android:id="@+id/edtDireccion"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:hint="Dirección"
+        app:layout_constraintTop_toBottomOf="@+id/edtProfesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnRegitraTransf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDireccion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,16 +9,16 @@
             android:icon="@drawable/ic_registrar"
             android:title="@string/menu_registrar" />
         <item
-            android:id="@+id/nav_buscar"
+            android:id="@+id/nav_realizarTrans"
+            android:icon="@drawable/ic_realizar_trensferencia"
+            android:title="@string/menu_realizarTran" />
+        <item
+            android:id="@+id/nav_buscarTrans"
             android:icon="@drawable/ic_buscar"
-            android:title="@string/menu_buscar" />
+            android:title="@string/menu_buscarTrans" />
         <item
-            android:id="@+id/nav_detalle"
-            android:icon="@drawable/ic_detalle"
-            android:title="@string/menu_detalle" />
-        <item
-            android:id="@+id/nav_listado"
-            android:icon="@drawable/ic_listado"
-            android:title="@string/menu_listado" />
+            android:id="@+id/nav_preferencias"
+            android:icon="@drawable/ic_configuracion"
+            android:title="@string/menu_preferencias" />
     </group>
 </menu>

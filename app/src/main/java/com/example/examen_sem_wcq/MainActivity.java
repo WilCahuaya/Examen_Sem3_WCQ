@@ -1,12 +1,16 @@
 package com.example.examen_sem_wcq;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -15,6 +19,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.examen_sem_wcq.databinding.ActivityMainBinding;
+
+import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_registrar, R.id.nav_buscar, R.id.nav_detalle,R.id.nav_listado)
+                R.id.nav_registrar, R.id.nav_realizarTrans, R.id.nav_buscarTrans,R.id.nav_preferencias)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -55,11 +61,26 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull @NotNull MenuItem menuelegido) {
+        switch (menuelegido.getItemId()){
+            case R.id.action_Configuración:{
+                Intent iPreference=new Intent(MainActivity.this,Preferencias_class.class);
+                startActivity(iPreference);
+                break;
+            }
+            case R.id.nav_view:{
+                Toast.makeText(this, "jajajajajaja", Toast.LENGTH_SHORT).show();
+            }
+        }
+        return true;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.examen_sem_wcq.ui.buscar;
+package com.example.examen_sem_wcq.ui.buscartransferencias;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.examen_sem_wcq.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BuscarFragment#newInstance} factory method to
+ * Use the {@link BuscarTransfFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BuscarFragment extends Fragment {
+public class BuscarTransfFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class BuscarFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BuscarFragment() {
+    public BuscarTransfFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class BuscarFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment BuscarFragment.
+     * @return A new instance of fragment BuscarTransfFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static BuscarFragment newInstance(String param1, String param2) {
-        BuscarFragment fragment = new BuscarFragment();
+    public static BuscarTransfFragment newInstance(String param1, String param2) {
+        BuscarTransfFragment fragment = new BuscarTransfFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class BuscarFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_buscar, container, false);
+        return inflater.inflate(R.layout.fragment_buscar_transf, container, false);
     }
 }

@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.buscar.BuscarFragment">
+    tools:context=".ui.realizartransferencias.RealisarTransfFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Buscar"
+        android:text="Realizar Transferencia"
         android:textSize="25sp"
         android:gravity="center"/>
 

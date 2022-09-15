@@ -12,20 +12,20 @@
         tools:layout="@layout/fragment_registrar" />
 
     <fragment
-        android:id="@+id/nav_buscar"
-        android:name="com.example.examen_sem_wcq.ui.buscar.BuscarFragment"
-        android:label="@string/menu_buscar"
-        tools:layout="@layout/fragment_buscar" />
+        android:id="@+id/nav_realizarTrans"
+        android:name="com.example.examen_sem_wcq.ui.realizartransferencias.RealisarTransfFragment"
+        android:label="@string/menu_realizarTran"
+        tools:layout="@layout/fragment_realisar_transf" />
 
     <fragment
-        android:id="@+id/nav_detalle"
-        android:name="com.example.examen_sem_wcq.ui.detalle.DetalleFragment"
-        android:label="@string/menu_detalle"
-        tools:layout="@layout/fragment_detalle" />
+        android:id="@+id/nav_buscarTrans"
+        android:name="com.example.examen_sem_wcq.ui.buscartransferencias.BuscarTransfFragment"
+        android:label="@string/menu_buscarTrans"
+        tools:layout="@layout/fragment_buscar_transf" />
 
     <fragment
-        android:id="@+id/nav_listado"
-        android:name="com.example.examen_sem_wcq.ui.listado.ListadoFragment"
-        android:label="@string/menu_listado"
-        tools:layout="@layout/fragment_listado" />
+        android:id="@+id/nav_preferencias"
+        android:name="com.example.examen_sem_wcq.ui.preferencias.PreferenciasFragment"
+        android:label="@string/menu_preferencias"
+        tools:layout="@layout/fragment_preferencias" />
 </navigation>

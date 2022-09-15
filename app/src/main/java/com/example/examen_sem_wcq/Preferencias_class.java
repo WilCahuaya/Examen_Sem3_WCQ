@@ -24,18 +24,18 @@ public class Preferencias_class extends PreferenceActivity {
         dat1=preferences.getBoolean("mantener_sesion",true);
         String dat2=preferences.getString("nombre_usuario","No registrado");
 
-        new Timer().schedule(new TimerTask() {
-            @Override
-            public void run() {
-                if(dat1==true) {
-                    Intent i=new Intent(Preferencias_class.this,MainActivity.class);
-                    startActivity(i);
-                }else {
-                    Intent i=new Intent(Preferencias_class.this,Login.class);
-                    startActivity(i);
-                };
-            }
-        },3000);
+//        new Timer().schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                if(dat1==true) {
+//                    Intent i=new Intent(Preferencias_class.this,MainActivity.class);
+//                    startActivity(i);
+//                }else {
+//                    Intent i=new Intent(Preferencias_class.this,Login.class);
+//                    startActivity(i);
+//                };
+//            }
+//        },3000);
 
     }
 
